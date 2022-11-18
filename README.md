@@ -21,3 +21,14 @@
 - :white_check_mark: Computed e Watch 1
 - :white_check_mark: Computed e Watch 2
 
+## Diretiva e Hooks
+- :white_check_mark: Arguments e Modifiers.
+- :white_check_mark: class e Style 1.
+- :white_check_mark: class e Style 2
+- :white_check_mark: v-movel 1
+- :white_check_mark: v-model 2
+- :white_check_mark: v-on e Eventos Globais
+- :white_check_mark: Lifecycle Hooks 1
+- :white_check_mark Lifecycle Hooks 2
+
+
