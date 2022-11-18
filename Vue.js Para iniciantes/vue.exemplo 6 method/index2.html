@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NijiGe</title>
+  </head>
+  <body>
+    <!--  Utilizando a API 
+        https://api.iextrading.com/1.0/stock/aapl/quote-->
+    <!--  Crie um método que faça o fetch da resposta acima
+    O método deve ser ativado ao clique no botão ver Preço 
+    Coloque a resposta json do fetch em uma data e mostre o valor de lalestPrice, latesTime 
+    e o compayName na interface. -->
+    <div id="app">
+        <p>categoriaId : {{acoes.categoriaId}}</p>
+        <p>latestPrice :{{acoes.latestPrice}}</p>
+        <p> companyName :{{acoes.compayName}}</p>
+        <button @click="puxarAcoes">Puxar Ações</button>
+    </div>
+    <script>
+      const teste = new Vue({
+        el: "#app",
+        data: {
+          acoes: {},
+        },
+        methods: {
+          puxarAcoes() {
+            fetch("https://api.iextrading.com/1.0/stock/aapl/quote")
+              .then((response) => response.json())
+              .then((json) => {
+                this.acoes = json;
+              });
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

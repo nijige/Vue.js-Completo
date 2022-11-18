@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <!-- O v-if é uma diretiva que permite utilizarmos condicionais
+    para mostrar ou não um elemento.Podemos utilizar também o v-else que seve vir
+logo após os if para funcionar. -->
+
+    <div id="app">
+        <!--  Agrupar o conteúdo com a tag <templante> -->
+     <!-- <template v-if="logado">
+        <p > Você está logado .</p>
+        <button @ckick="logado = false">Deslogar</button>
+    </template>
+
+    <template v-else="logado">
+        <p >Você não está logado.</p>
+        <button @ckick="logado = true">Logar</button>
+    </template> -->
+
+        <!-- <p v-else-if="logado === false">Usuário Deslogado 2.</p> -->
+        <p v-if="logado"> Usuario esta logado</p>
+        <p v-show="logado">Usuario esta logado</p>
+     
+    </div>
+    <script>
+        const vm = new Vue({
+            el:"#app",
+            data:{
+                logado: false
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+Vue.js completo
+Instalação do vue.js reatividade,template e diretivas.
+
+Vue.js Para iniciantes.
+Instância,data, methods, v-bind,v-on,v-if,computed e watch
+
+Diretivas e Hooks
+
+Argumentos, modificadores, hooks de ciclo de vida e v-model 
+
+Techno Projeto
+Primeiro projetos utilizando os conceitos iniciais
+
+Componentes
+Básico, props, events, vue cli, slots e async
+
+Animações
+
+Transitions, components e list.
+
+Vue Router
+
+Router, dynamic, navigation guards, fectch e mais
+
+
+Vuex
+State, mutantions,actions,getters e modules
+
+
+Projeto Final
+Ranek,Rest Api,Axios, JWT e mais
+
+
+Reatividade/ Sincronia-->> Manter a ui sincronizada com estado. Estado (state) é um dado em uma variável. 
+
+
+<!--  html  -->
+
+<div id="app">
+    <button @click = "total++"> Incremetar</button>
+    <span> {{total}}</span>
+</div>
+
+<!--  Vue  -->
+
+const vm = new Vue({
+    el:"#app",
+    data:{ 
+        total: 0
+    }
+});
+
+<!-- Javascript Puro -->
+
+
+const button = document.querySelector("button");
+const span = document.querySelector("span");
+let total = 0;
+
+function incrementar(){
+    span.innerText = total++;
+}
+
+button.addEventListener("click,incrementar");
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Conveniência ---------->>> Torna mais simples a manipulação do DOM.
+Componentes ----------->>> Facilita a divisão da interface em componentes,facilitando a manutenção.

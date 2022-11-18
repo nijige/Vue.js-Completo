@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li><a @ckick.prevent="puxarAcao" href="https://naruto-api.herokuapp.com/api/v1/characters">Akatsuchi</a></li>
+            <li><a @ckick.prevent="puxarAcao" href="https://naruto-api.herokuapp.com/api/v1/characters">Anko Mitarashi</a</li>
+            <li><a @ckick.prevent="puxarAcao" href="https://naruto-api.herokuapp.com/api/v1/characters">Aoba Yamashiro</a</li>
+            <li><a @ckick.prevent="puxarAcao" href="https://naruto-api.herokuapp.com/api/v1/characters">Asuma Sarutobi</a</li>
+            <li><a @ckick.prevent="puxarAcao" href="https://naruto-api.herokuapp.com/api/v1/characters">Baki</a</li>
+
+        </ul>
+
+    </div>
+    <div>
+        {{acao.about}}
+    </div>
+    <script>
+        const vm = new Vue({
+            el:"#app",
+            data:{
+                acao:{}
+
+            },
+            methods: {
+                puxarAcao(){
+                    const url = event.currentTarget.href
+                    fetch(url)
+                    .then(r => r.json())
+                    .the(r =>{
+                        this.acao = r;
+                    })
+
+                }
+            },
+        })
+    </script>
+</body>
+</html>

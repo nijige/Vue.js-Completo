@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NijiGe</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="carro in carrosAzuais">{{carro.marca}}</li>
+        <button @click="removerCarro">Remover</button>
+        <p>{{contador}}</p>
+        <button @click="contador++">Adicionar</button>
+      </ul>
+    </div>
+    <script>
+      const vm = new Vue({
+        el: "#app",
+        data: {
+          contador: 0,
+          carros: [
+            {
+              marca: "VW",
+              cor: "azul",
+            },
+
+            {
+              marca: "Ford",
+              cor: "Preto",
+            },
+            {
+              marca: "Tesla",
+              cor: "azul",
+            },
+          ],
+        },
+        computed: {
+          carrosAzuais() {
+            return (filtro = this.carros.filter(({ cor }) => cor === "azul"));
+          },
+        },
+        methods: {
+          removerCarro() {
+            this.carros.pop();
+          },
+        },
+        watch: {
+          contador(valorNovo,valorAntigo) {
+            console.log(valorNovo);
+            console.log(valorAntigo);
+
+            // alert(this.contador);
+            this.removerCarro();
+          },
+          carros(valorNovo,valorAntigo){
+            console.log(valorNovo);
+          }
+        },
+      });
+    </script>
+  </body>
+</html>

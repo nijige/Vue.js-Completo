@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js</title>
+  </head>
+  <body>
+    <div id="app">{{alimento}},</div>
+    <div id="app1">{{caloria}}</div>
+    <div id="app2">{{proteina}}</div>
+    <script>
+      //  Crie uma tag com id app e inicie uma instancia de vue
+      const teste = new Vue(
+        {
+          el: "#app",
+          data: {
+            alimento: " Pão doce ",
+          },
+        }
+        // Faça o HTML abaixo funcionar com vue
+      );
+
+      const teste1 = new Vue({
+        el:"#app1",
+        data:{
+            caloria: teste.alimento,
+        }
+      });
+
+      const teste2 = new Vue({
+        el:"#app2",
+        data:{
+            proteina: 0,
+        }
+      })
+
+      
+    </script>
+  </body>
+</html>

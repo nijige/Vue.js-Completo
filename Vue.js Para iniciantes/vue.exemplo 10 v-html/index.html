@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <div id="app">
+        <div >
+            <div v-html="link">{{link}}</div>
+        </div>
+        <p>{{fruta}} custa R$ 20 : </p>
+        <p>Valor Inicial : R${{total - gasto}}</p>
+        <p v-once="fruta">Valor inicial: R${{total}}</p>
+        <button @click="gasto += 5">Comprar Banana R$ 5</button>
+        <P>Total gasto: R${{gasto}}</P>
+        <P>Valor final :R${{total - gasto}}</P>
+
+    </div>
+    <script>
+        const vm = new Vue({
+            el:"#app",
+            data:{
+                link:"<a href= 'https://flutter.dev/' >Flutter</a>" ,
+                fruta:"banana",
+                total:150,
+                gasto:20
+            }
+        });
+    </script>
+</body>
+</html>

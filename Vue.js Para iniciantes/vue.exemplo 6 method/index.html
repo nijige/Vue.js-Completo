@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NijiGe</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Loja de Instrumentos</h1>
+      {{total}}
+      <button @click="adicionar">adicionar</button>
+      <button @click="diminuir">diminuir</button>
+      <p>{{instrumento}}</p>
+      <button @click="mudarNome('violão')">Guitarra</button>
+      <button @click="mudarNome('baixo')">baixo</button>
+      <button @click="verEvento('teclado')">Evento</button>
+
+    </div>
+    <script>
+      const teste = new Vue({
+        el: "#app",
+        data: {
+          total: 0,
+          instrumento: "",
+        },
+        methods: {
+          adicionar() {
+            this.total++;
+            this.teste();
+          },
+          diminuir() {
+            this.total--;
+            this.teste();
+          },
+
+          mudarNome(instrumento) {
+            this.instrumento = instrumento;
+          },
+          verEvento(event) {
+            console.log(event);
+          },
+          teste(){
+            console.log("Método ativado");
+          }
+        },
+      });
+    </script>
+  </body>
+</html>

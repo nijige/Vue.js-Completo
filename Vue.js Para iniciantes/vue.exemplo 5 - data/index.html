@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="/vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <!-- A propriedade data é responsavel por dar a reatividade aos estados definindo aos seus getters e setters.Ela recebe um objeto ou uma função -->
+    <div id="app">
+        <h1>{{logado}}</h1>
+    </div>
+
+    <script>
+        const exemploData = new Vue({
+        el:"#app",
+        data:{
+            logado: "Está Logando ?",
+            // $instrumento: "guitarra",
+
+        }
+        })
+        setTimeout(() =>{
+            exemploData.logado = "Sim"
+        }, 1000);
+        // exemploData.cor = "verde ";
+        
+
+
+    </script>
+    
+</body>
+</html>

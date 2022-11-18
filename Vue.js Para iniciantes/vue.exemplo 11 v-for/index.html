@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="({nome,populacao}, key) in estados" :key="key + nome">
+                   {{nome}} :
+                   {{populacao}}
+                <!-- <p>{{valor.populacao}}</p>
+                <p>{{valor.populacao}}</p> -->
+            </li>
+            <div v-for="x in 50">
+                {{x}}
+
+            </div>
+        </ul>
+    </div>
+    <script>
+        const vue = new Vue({
+            el:"#app",
+            data:{
+                estados:{
+                    sp:{
+                        populacao:"45 milhões",
+                        nome:"São Paulo"
+                    },
+                    mg :{
+                        populacao:"21 milhões",
+                        nome:"Minas Gerais"
+                    },
+                    rj :{
+                        populacao:"17 milhões",
+                        nome:"Rio de Janeiro"
+                    },
+
+                }
+
+            }
+        })
+    </script>
+    
+</body>
+</html>

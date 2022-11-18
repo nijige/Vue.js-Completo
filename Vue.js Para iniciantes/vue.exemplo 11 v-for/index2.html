@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item in lista">{{item}}</li>
+        </ul>
+        <button @click="removerItem">Remover</button>
+        <button @click="modificarItem">Modificar</button>
+    </div>
+    <script>
+        const vm = new Vue({
+            el:"#app",
+            data:{
+                lista:["Item 1", "Item 2","Item 3"]
+            },
+            methods: {
+                removerItem(){
+                    this.lista.pop();
+                    // this.lista.push("item 5");
+                },
+                modificarItem(){
+                    this.$set(this.lista,0,"biscoito")
+                    // this.lista[0] =" morango";
+                }
+            },
+        })
+    </script>
+</body>
+</html>

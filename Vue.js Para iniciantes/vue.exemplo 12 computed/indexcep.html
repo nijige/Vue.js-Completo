@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="puxarNinja">Ninja</button>
+        <select name="ninjas" id="ninjas" v-model="selecionado">
+            <option v-for="ninja in ninjas" :value="ninja.name">
+                {{ninja.name}}
+            </option>
+
+        </select>
+        <p>
+        {{idade.images}}
+        </p>
+    </div>
+    <script>
+        const vue = new Vue({
+            el:"#app",
+            data:{
+                ninjas:{},
+                selecionado: "",
+                idade:"",
+
+            },
+            methods: {
+                puxarNinja(){
+                    fetch("https://naruto-api.herokuapp.com/")
+                    .then(r => r.json())
+                    .then(r => {
+                        this.ninjas= r;
+                    })
+                }
+            },
+            watch:{
+                selecionado(valor){
+                    this.idade = this.ninjas.find((ninjas) => ninjas.name === valor);
+
+
+                }
+            }
+            
+        })
+    </script>
+</body>
+</html>

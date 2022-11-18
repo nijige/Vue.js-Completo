@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <style>
+        .cor1{
+            color: green;
+        }
+        .cor2{
+            color: purple;
+        }
+    </style>
+    <div id="app">
+        <h1> Animes Na Moda</h1>
+        <div>
+            <p>{{anime_id}}</p>
+        </div>
+        <div>
+            <p>{{anime_name}}</p>
+            <p>{{anime_img}}</p>
+        </div>
+     
+
+        <button @click="puxarDados">Puxar Dados</button>
+    </div>
+    <script>
+        const vm = new Vue({
+            el:"#app",
+            data:{
+                anime_id:{},
+                anime_name:{},
+
+            },
+            methods: {
+                fetchAnime(){
+                    fetch(" https://anime-facts-rest-api.herokuapp.com/api/v1")
+                    .then(r => r.json())
+                    .then(anime_id =>{
+                        this.anime_id = anime_id.data[0].anime_id;
+                    })
+                },
+
+                fetchName(){
+                    fetch(" https://anime-facts-rest-api.herokuapp.com/api/v1/")
+                    .then(r => r.json())
+                    .then(anime_name =>{
+                        this.anime_name = anime_name.data[0].anime_name;
+                    })
+                },
+                fetchImg(){
+                    fetch(" https://anime-facts-rest-api.herokuapp.com/api/v1/")
+                    .then(r => r.json())
+                    .then(anime_img =>{
+                        this.anime_img = anime_img.data[0].anime_img;
+                    })
+                },
+                puxarDados(){
+                    this. fetchAnime();
+                    this.fetchName();
+                    this.fetchImg();
+                }
+            }
+            
+        })
+    </script>
+</body>
+</html>
