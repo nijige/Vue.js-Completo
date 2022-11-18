@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <div id="app">
+
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" v-model="nome">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" v-model="email">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" v-model="telefone">
+
+            <label for="mensagem">Mensagem</label>
+            
+            <textarea name="mensagem" id="mensagem" v-model="mensagem"></textarea>
+            <br>
+             <input @click.prevent="enviarForm" type="submit">
+        </form>
+
+        <div>
+
+            <ul>
+                <li v-for="valor, chave in resultado">
+                    {{chave}} : {{valor}}
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <script>
+        const vm = new Vue({
+            el:"#app",
+            data:{
+                nome:"",
+                email:"",
+                telefone:"",
+                mensagem:"",
+                resultado:{},
+
+            },
+
+            methods: {
+                enviarForm(){
+                    this.resultado = {
+                        nome:this.nome,
+                        email:this.email,
+                        telefone: this.telefone,
+                        mensagem:this.mensagem,
+
+                    }
+
+                }
+            },
+        })
+    </script>
+</body>
+</html>
