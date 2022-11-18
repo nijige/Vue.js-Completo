@@ -5,7 +5,7 @@
 - :white_check_mark: Framework
 - :white_check_mark: ferramentas do curso
 - :white_check_mark: instalação do vuejs
-- :white_check_mark Reatividade e Virtual
+- :white_check_mark: Reatividade e Virtual
 
 
 ### Vue.js Para Iniciantes
