@@ -2,17 +2,17 @@
 ## Curso a Realizar 
 
 ### Introdução
-- ✅heck_mark: Framework
-- ✅check_mark: ferramentas do curso
-- ✅check_mark: instalação do vuejs
-- ✅check_mark: Reatividade e Virtual
+- ✅:white_check_markk: Framework
+- :white_check_mark: ferramentas do curso
+- ✅:white_check_markk: instalação do vuejs
+- :white_check_mark Reatividade e Virtual
 
 
 ### Vue.js Para Iniciantes
-- ✅check_mark: instância.
-- ✅check_mark: Data.
-- ✅check_mark: Methods
-- ✅heck_mark: v-bind
+- ✅:white_check_mark: instância.
+- ✅:white_check_mark: Data.
+- :white_check_markk: Methods
+- :white_check_mark: v-bind
 - :white_check_mark: v-on
 - :white_check_mark: v-if
 - :white_check_mark: v-html e v-text
