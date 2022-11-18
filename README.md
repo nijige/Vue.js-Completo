@@ -1,4 +1,4 @@
-# computeder:  Vue.js-Completo #
+# computer:  Vue.js-Completo #
 ## Curso a Realizar 
 
 ### Introdução
