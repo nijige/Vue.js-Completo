@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijiGe</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{mensagem}}</p>
+        <div>{{github}}</div>
+        <button @click="puxarGithub"> Puxar github</button>
+    </div>
+    <script>
+        const vm = new Vue({
+            el:"#app",
+            data:{
+                mensagem:"oiiiiii",
+                github:{},
+
+            },
+            methods: {
+                puxarGithub(){
+                    fetch("https://api.github.com/users/origamid")
+                    .then(r => r.json())
+                    .then(r => {
+                        this.github = r;
+                    })
+                }
+            },
+            beforeCreate() {
+                console.log(this.mensagem);
+                
+            },
+            created() {
+                this.puxarGithub();
+                console.log(this.mensagem)
+            },
+            beforeMount() {
+                console.log("BeforeMount",this.mensagem)
+                console.log("elemento", this.$el)
+                
+            },
+            mounted() {
+                console.log("elemento", $this.$el)
+                
+            },
+            updated() {
+                
+            },
+        })
+    </script>
+    
+</body>
+</html>
