@@ -29,6 +29,6 @@
 - :white_check_mark: v-model 2
 - :white_check_mark: v-on e Eventos Globais
 - :white_check_mark: Lifecycle Hooks 1
-- :white_check_mark Lifecycle Hooks 2
+- :white_check_mark: Lifecycle Hooks 2
 
 
