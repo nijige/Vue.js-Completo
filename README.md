@@ -2,7 +2,7 @@
 ## Curso a Realizar 
 
 ### Introdução
-- :white_check_mark: Framework
+- ✅heck_mark: Framework
 - ✅check_mark: ferramentas do curso
 - ✅check_mark: instalação do vuejs
 - ✅check_mark: Reatividade e Virtual
