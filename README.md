@@ -33,3 +33,16 @@
 
 ## Techno Projeto
 - :white_check_mark: Projeto Introdução
+- :white_check_mark: Lista Produtos
+- :white_check_mark: Filters
+- :white_check_mark: Fetch Produto
+- :white_check_mark: Modal Produto
+- :white_check_mark: Estilo Produto
+- :white_check_mark: Fechar Produto
+- :white_check_mark: Carrinho
+- :white_check_mark: Localstorge Carrinho
+- :white_check_mark: Alerta
+
+
+
+
