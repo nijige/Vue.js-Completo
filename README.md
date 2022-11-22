@@ -42,6 +42,11 @@
 - :white_check_mark: Carrinho
 - :white_check_mark: Localstorge Carrinho
 - :white_check_mark: Alerta
+- :white_check_mark: Router
+- :white_check_mark: Estilo Carrinho
+- :white_check_mark: Controle Estoque
+- :white_check_mark: Responsivo
+## Componentes
 
 
 
