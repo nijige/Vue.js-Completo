@@ -47,6 +47,10 @@
 - :white_check_mark: Controle Estoque
 - :white_check_mark: Responsivo
 ## Componentes
+- :white_check_mark: Componentes Básico 1
+- :white_check_mark: Componentes Básico 2
+- :white_check_mark: Componentes Básico 3
+- :white_check_mark: Props 1
 
 
 
