@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./vue.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NijiGe</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <formulario-Acoes></formulario-Acoes>
+    </div>
+
+    <script type="module">
+      const DadosAcao = {
+        name: "DadosAcao",
+        props: ["acao"],
+        template: `
+        <ul>
+          <li v-for="(dado, chave) in acao">
+            {{chave}}:{{dado}}
+          </li>
+          {{acao}}
+
+        </ul>
+        `,
+      };
+
+      const FormularioAcoes = {
+        name: "FormularioAcoes",
+        components: {
+          DadosAcao,
+        },
+        data() {
+          return {
+            simbolo: "",
+            characters: {},
+          };
+        },
+        template: `
+            <div>
+              {{simbolo}}
+            <input type="text" v-model="simbolo"/>
+            <button @click="puxarAcao">Puxar Ações</button>  
+            <dados-acao :acao=" characters"></dados-acao>
+            </div>            
+            `,
+        methods: {
+          puxarAcao() {
+            fetch(
+              `https://naruto-api.herokuapp.com/api/${this.simbolo}v1/characters`
+            )
+              .then((r) => r.json())
+              .then((r) => {
+                this.characters = r;
+              });
+          },
+        },
+      };
+
+      const vue = new Vue({
+        el: "#app",
+        components: {
+          FormularioAcoes,
+        },
+      });
+    </script>
+  </body>
+</html>
