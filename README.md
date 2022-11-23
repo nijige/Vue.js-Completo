@@ -51,6 +51,10 @@
 - :white_check_mark: Componentes Básico 2
 - :white_check_mark: Componentes Básico 3
 - :white_check_mark: Props 1
+- :white_check_mark: Props 2
+- :white_check_mark: Events
+- :white_check_mark: vue-cli
+- :white_check_mark: vue-estrutura
 
 
 
