@@ -58,6 +58,6 @@
 - :white_check_mark: slots
 - :white_check_mark: dynamic
 - :white_check_mark: async
-## Componentes
+## Animações
 
 
