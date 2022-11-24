@@ -55,7 +55,9 @@
 - :white_check_mark: Events
 - :white_check_mark: vue-cli
 - :white_check_mark: vue-estrutura
-
-
+- :white_check_mark: slots
+- :white_check_mark: dynamic
+- :white_check_mark: async
+## Componentes
 
 
