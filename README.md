@@ -64,6 +64,9 @@
 - :white_check_mark: component
 - :white_check_mark: list
 
+## Router
 
+## Vuex
 
+## Projeto Final
 
