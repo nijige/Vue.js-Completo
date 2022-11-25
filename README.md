@@ -59,5 +59,11 @@
 - :white_check_mark: dynamic
 - :white_check_mark: async
 ## Animações
+- :white_check_mark: transition -1
+- :white_check_mark: transition -2
+- :white_check_mark: component
+- :white_check_mark: list
+
+
 
 
