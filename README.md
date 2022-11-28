@@ -75,6 +75,6 @@
 - :white_check_mark: produtos 
 - :white_check_mark: axios
 - :white_check_mark: busca
-- ✅:produtos-e-estilos
+- ✅produtos-e-estilos
 
 
