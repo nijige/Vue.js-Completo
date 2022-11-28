@@ -76,7 +76,7 @@
 - :white_check_mark: axios
 - :white_check_mark: busca
 - ✅produtos-e-estilos
-_ :white_check_mark: input-e-estilo
-_ :white_check_mark: paginação
+- :white_check_mark: input-e-estilo
+- :white_check_mark: paginação
 
 
