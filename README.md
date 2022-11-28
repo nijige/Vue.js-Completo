@@ -78,5 +78,6 @@
 - ✅produtos-e-estilos
 - :white_check_mark: input-e-estilo
 - :white_check_mark: paginação
+- :white_check_mark: paginação-range
 
 
