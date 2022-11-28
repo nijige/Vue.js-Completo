@@ -69,4 +69,9 @@
 ## Vuex
 
 ## Projeto Final
+- :white_check_mark: ranek-inicio 
+- :white_check_mark: header-e-footer
+- :white_check_mark: home
+- :white_check_mark: produtos 
+- :white_check_mark: axios
 
