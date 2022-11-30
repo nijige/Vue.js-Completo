@@ -79,5 +79,6 @@
 - :white_check_mark: input-e-estilo
 - :white_check_mark: paginação
 - :white_check_mark: paginação-range
+- :white_check_mark: transicao
 
 
