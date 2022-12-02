@@ -80,5 +80,25 @@
 - :white_check_mark: paginação
 - :white_check_mark: paginação-range
 - :white_check_mark: transicao
+- :white_check_mark: produto-filter
+- :white_check_mark: login
+- :white_check_mark: vuex-login
+- :white_check_mark: usuario-formulario 
+- :white_check_mark: vuex--formulario
+- :white_check_mark: cep-api
+- :white_check_mark: post-usuario
+- :white_check_mark: usuario-estilo
+- :white_check_mark: usuario-produtos
+- :white_check_mark: produtos-adicionar
+- :white_check_mark: produto-deletar
+- :white_check_mark: usuario-atualizar
+- :white_check_mark: transacao
+- :white_check_mark: compras-e-vendas
+
+
+
+
+
+
 
 
