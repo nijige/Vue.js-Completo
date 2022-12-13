@@ -97,6 +97,8 @@
 - :white_check_mark: criar-e-logar
 - :white_check_mark: fotos-upload
 - :white_check_mark: catch-error
+- :white_check_mark: navigation-guard
+
 
 
 
