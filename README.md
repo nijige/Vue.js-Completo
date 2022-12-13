@@ -96,6 +96,7 @@
 - :white_check_mark: compras-e-vendas
 - :white_check_mark: criar-e-logar
 - :white_check_mark: fotos-upload
+- :white_check_mark: catch-error
 
 
 
