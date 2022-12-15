@@ -100,6 +100,10 @@
 - :white_check_mark: navigation-guard
 - :white_check_mark: estilo-responsivo
 - :white_check_mark: api-servidor
+- :white_check_mark: vuejs-servidor
+- :white_check_mark: title-e-mais
+
+
 
 
 
