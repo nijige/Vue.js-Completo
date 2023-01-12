@@ -55,6 +55,60 @@
 - :white_check_mark: Events
 - :white_check_mark: vue-cli
 - :white_check_mark: vue-estrutura
+- :white_check_mark: slots
+- :white_check_mark: dynamic
+- :white_check_mark: async
+## Animações
+- :white_check_mark: transition -1
+- :white_check_mark: transition -2
+- :white_check_mark: component
+- :white_check_mark: list
+
+## Router
+
+## Vuex
+
+## Projeto Final
+- :white_check_mark: ranek-inicio 
+- :white_check_mark: header-e-footer
+- :white_check_mark: home
+- :white_check_mark: produtos 
+- :white_check_mark: axios
+- :white_check_mark: busca
+- ✅produtos-e-estilos
+- :white_check_mark: input-e-estilo
+- :white_check_mark: paginação
+- :white_check_mark: paginação-range
+- :white_check_mark: transicao
+- :white_check_mark: produto-filter
+- :white_check_mark: login
+- :white_check_mark: vuex-login
+- :white_check_mark: usuario-formulario 
+- :white_check_mark: vuex--formulario
+- :white_check_mark: cep-api
+- :white_check_mark: post-usuario
+- :white_check_mark: usuario-estilo
+- :white_check_mark: usuario-produtos
+- :white_check_mark: produtos-adicionar
+- :white_check_mark: produto-deletar
+- :white_check_mark: usuario-atualizar
+- :white_check_mark: transacao
+- :white_check_mark: compras-e-vendas
+- :white_check_mark: criar-e-logar
+- :white_check_mark: fotos-upload
+- :white_check_mark: catch-error
+- :white_check_mark: navigation-guard
+- :white_check_mark: estilo-responsivo
+- :white_check_mark: api-servidor
+- :white_check_mark: vuejs-servidor
+- :white_check_mark: title-e-mais
+
+
+
+
+
+
+
 
 
 
