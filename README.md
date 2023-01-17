@@ -103,6 +103,28 @@
 - :white_check_mark: vuejs-servidor
 - :white_check_mark: title-e-mais
 
+##FRONT-END
+
+1)Iniciar o projeto Laravel 
+composer create-project --prefer-dist laravel/laravel=8.5.9 <nome_do_Projeto>
+
+2)Instalar o pacote UI
+composer require laravel/ui:^3.2.1
+
+3) Gerar o esqueleto do projeto com VueJs e autenticação web nativa (scaffold/esqueleto)
+
+- php artisan ui vue --auth
+
+4) baixar as depencias de front-end
+
+- npm install
+
+5) Produzindo o bundle de front-end
+- npm run dev
+
+
+
+
 
 
 
