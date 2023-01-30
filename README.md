@@ -103,7 +103,7 @@
 - :white_check_mark: vuejs-servidor
 - :white_check_mark: title-e-mais
 
-##FRONT-END
+  ##FRONT-END
 
 1)Iniciar o projeto Laravel 
 composer create-project --prefer-dist laravel/laravel=8.5.9 <nome_do_Projeto>
